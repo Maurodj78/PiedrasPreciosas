@@ -26,11 +26,26 @@
 		<div class="nosotros-container">
 			<div class="nosotros-row">
 				<div class="nosotros-col">
-					<h3 class="titulo">Contacto</h3>
-					<h2 class="subtitulo"><span></span></h2>
+					<h3 class="titulo">Contactanos</h3>
+					<h2 class="subtitulo"><span>Envianos tus consultas y sugerencias. Ponete en contacto con nuestra red de locales.</span></h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis nemo veritatis, officiis rerum cumque iste eius quia ullam animi architecto, maxime nobis expedita, similique velit eos dolores ut. Ipsam.
 					</p>
+					    <!-- Formulario de contacto -->
+    				<form action="procesar_formulario.php" method="post">
+        				<label for="nombre">Nombre:</label>
+        				<input type="text" id="nombre" name="nombre" required>
+        
+        				<label for="email">Email:</label>
+        				<input type="email" id="email" name="email" required>
+        
+        				<label for="mensaje">Mensaje:</label>
+        				<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        				<button type="submit">Enviar</button>
+						<br>
+						<br>
+    				</form>
 				</div>
 			</div>
 		</div>
