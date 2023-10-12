@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Joyería Piedras Del Sur</title>
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="shortcut icon" href="img/icons/piedraspreciosas.ico" type="image/x-icon">
@@ -21,7 +24,6 @@
 		<a href="pages/promociones.html">Promociones</a>
 		<a href="pages/contacto.html">Contacto</a>
 	</nav>
-
 	<main class="contenedor">
 		<div class="nosotros-container">
 			<div class="nosotros-row">
@@ -29,21 +31,61 @@
 					<h3 class="titulo">Transformando sueños en joyas, desde el corazón del Sur</h3>
 					<h2 class="subtitulo"><span>¿Quienes Somos?</span></h2>
 					<p>
-						¡Bienvenidos a Piedras del Sur, el hogar de la belleza eterna en forma de joyas! Con más de dos décadas de experiencia en el 
-						apasionante mundo de las joyerías, somos líderes y pioneros en la importación de piezas únicas y personalizadas para satisfacer los 
+						¡Bienvenidos a Piedras del Sur, el hogar de la belleza eterna en forma de joyas! Con más de dos
+						décadas de experiencia en el
+						apasionante mundo de las joyerías, somos líderes y pioneros en la importación de piezas únicas y
+						personalizadas para satisfacer los
 						gustos más exigentes.
-		
-						Cada una de las categorías de nuestros productos ofrece una experiencia de compra única y emocionante para nuestros clientes, 
+	
+						Cada una de las categorías de nuestros productos ofrece una experiencia de compra única y
+						emocionante para nuestros clientes,
 						permitiéndoles encontrar la joya perfecta para sus necesidades y gustos.
-		
-						Te ofrecemos alianzas de lujo, alta joyería con colecciones diseñadas para destacar en ocasiones especiales, joyas personalizadas, 
-						joyería de colección. Puedes ver mucho más en la sección catálogo de nuestro sitio web. 
+	
+						Te ofrecemos alianzas de lujo, alta joyería con colecciones diseñadas para destacar en ocasiones
+						especiales, joyas personalizadas,
+						joyería de colección. Puedes ver mucho más en la sección catálogo de nuestro sitio web.
 					</p>
 				</div>
 			</div>
 		</div>
-		
-
+		<!--comienzo carousel-->
+		<div class="d-flex justify-content-center">
+			<div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel" data-bs-wrap="true">
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="2000">
+						<img src="img/products/pexels-ari-roberts-9649263.jpg" class="d-block w-70 custom-height"
+							alt="decoracion de baño 1">
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img src="img/products/pexels-the-glorious-studio-16702313.jpg" class="d-block w-70 custom-height"
+							alt="decoracion de baño 2">
+					</div>
+					<div class="carousel-item " data-bs-interval="2000">
+						<img src="img/products/pexels-the-glorious-studio-16794264.jpg" class="d-block w-70 custom-height"
+							alt="decoracion de baño 3">
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img src="img/products/pexels-the-glorious-studio-16794265.jpg" class="d-block w-70 custom-height" alt="decoracion de baño 3">
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img src="img/products/pexels-dima-valkov-2899839.jpg" class="d-block w-70 custom-height"
+							alt="decoracion de baño 3">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	
+		<!--fin carousel-->
 		<div class="custom-fila productos">
 			<article class="custom-article">
 				<h2 class="custom-subtitulo"><span>Luxury</span></h2>

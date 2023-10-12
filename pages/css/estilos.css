@@ -244,6 +244,16 @@ form {
     box-sizing: border-box;
 }
 
+#carouselExampleInterval {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+
+}
+
+    
+
+
 .nosotros-row {
     display: flex;
     justify-content: center;
@@ -253,7 +263,7 @@ form {
     text-align: center;
 }
 
-.nosotros-col p {
+.nosotros-col p{
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -669,13 +679,13 @@ form {
 
 .custom-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en el ancho del contenedor */
-    justify-content: space-between; /* Espaciado uniforme entre los elementos */
-    margin: 0 -10px; /* Compensación para evitar espacios laterales */
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 -10px; 
 }
 
 .custom-producto {
-    text-align: center; /* Alinea el contenido al centro si es necesario */
+    text-align: center;
 }
 
 @media screen and (max-width: 992px) {

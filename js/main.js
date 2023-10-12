@@ -7,3 +7,5 @@ window.onscroll = () => {
 		fondo.style.width = anchoFondo + '%';
 	}
 }
+
+
