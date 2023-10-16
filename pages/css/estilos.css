@@ -67,6 +67,15 @@ form {
     padding: 20px;
 }
 
+.boton-enlace{
+    color:#0056b3;
+   text-decoration: none;
+   background-color: rgb(195, 233, 195);
+}
+.boton-enlace:hover {
+    background-color: #7cf3ae;
+}
+
 
 .catalogo-grid {
     display: grid;
@@ -95,6 +104,12 @@ form {
     font-weight: bold;
 
 }
+
+ 
+ 
+ /* Estilos para el enlace botón sin subrayado */
+
+
 
 
   .promociones-container {
@@ -534,6 +549,17 @@ form {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+.contacto-datos{
+    font-size: 16px;
+	color: var(--blue-dark);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 700;
+	z-index: 2;
+	text-transform: uppercase;
+	margin-top: 10px;
+    margin-bottom: 20px; 
+    
 }
 
 .contacto {
