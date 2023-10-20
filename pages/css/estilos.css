@@ -192,6 +192,15 @@ form {
     width: 100%;
 }
 
+.navbar {
+    background-color: black;
+}
+
+.navbar-toggler-icon,
+.nav-link {
+    color: white;
+}
+
 .contenido-header .texto {
     width: calc(100vw - 20px);
     height: 30vh;
@@ -216,7 +225,8 @@ form {
 	z-index: 999;
 	text-align: center;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+    align-items: center;
 	font-family: 'Helvetica Neue', sans-serif;
 	margin-bottom: 60px;
 	color: white; 
@@ -744,5 +754,34 @@ form {
 @media screen and (max-width: 767px) {
     .col-10 {
         flex: 0 0 calc(100% - 30px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección de los elementos */
+        align-items: flex-start; /* Alinea el texto a la izquierda */
+    }
+
+    .menu a {
+        display: block; /* Mostrar en bloques para apilarlos verticalmente */
+        margin: 5px 0; /* Agrega margen entre elementos */
+    }
+}
+
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: 30%; 
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: 100%; 
     }
 }
