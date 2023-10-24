@@ -36,7 +36,7 @@
 					</p>
 					<h4 class="contacto-datos">Rellena los campos con tus datos.</h4>
 					    <!-- Formulario de contacto  -->
-    				<form action="procesar_formulario.php" method="post">
+    				<form method="post" onsubmit="return validarFormulario();">
         				<label for="nombre">Nombre:</label>
         				<input type="text" id="nombre" name="nombre" required>
         
