@@ -8,35 +8,43 @@ window.onscroll = () => {
 	}
 }
 
-function validarFormulario() {
-	var nombre = document.getElementById("nombre").value;
-	var email = document.getElementById("email").value;
-	var mensaje = document.getElementById("mensaje").value;
+function validarFormulario(event) {
+    event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
 
-	if (nombre === "" || email === "" || mensaje === "") {
-		alert("Por favor, completa todos los campos.");
-		return false;
-	}
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
 
-	var expresion = /^[a-zA-Z]+$/;  
+    if (nombre === "" || email === "" || mensaje === "") {
+        alert("Por favor, completa todos los campos.");
+        return false;
+    }
+
+    var expresion = /^[a-zA-Z]+$/;  
 
     if (!expresion.test(nombre)) {
         alert("El campo 'nombre' no debe contener caracteres numéricos.");
         return false;
     }
 
-	var expresionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	if (!expresionEmail.test(email)) {
-		alert("El correo electrónico no tiene un formato válido.");
-		return false;
-	}
+    var expresionEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+/;
+    if (!expresionEmail.test(email)) {
+        alert("El correo electrónico no tiene un formato válido.");
+        return false;
+    }
 
-	if (mensaje.trim() === "") {
-		alert("El campo 'mensaje' no puede ser solo espacios en blanco.");
-		return false;
-	}
+    if (mensaje.trim() === "") {
+        alert("El campo 'mensaje' no puede ser solo espacios en blanco.");
+        return false;
+    }
 
-	return true;
+    // Limpia los valores de los campos después de una validación exitosa
+    document.getElementById("nombre").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mensaje").value = "";
+
+	alert("Mensaje validado correctamente");
+    return true;
 }
 
 document.getElementById("cargarDatos").addEventListener("click", function () {
@@ -58,4 +66,11 @@ document.getElementById("cargarDatos").addEventListener("click", function () {
         .catch(function (error) {
             console.log("Hubo un error: " + error);
         });
+});
+
+const imagenesAmpliables = document.querySelectorAll('.imagen-ampliable');
+    imagenesAmpliables.forEach((imagen) => {
+        imagen.addEventListener('click', () => {
+            imagen.style.transform = 'scale(4)'; 
+    });
 });

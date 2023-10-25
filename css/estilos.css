@@ -146,6 +146,15 @@ form {
     box-sizing: border-box;
 }
 
+.imagen-ampliable {
+    cursor: pointer;
+    transition: transform 0.3s; /* Agrega una transición para suavizar el efecto */
+}
+
+.imagen-ampliable:hover {
+    transform: scale(1.2); /* Amplía la imagen al hacer hover */
+}
+
 .custom-fila {
     display: flex;
     justify-content: space-around;

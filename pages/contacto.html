@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Joyería Piedras Del Sur</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="/PiedrasPreciosas/css/estilos.css">
-	<link rel="shortcut icon" href="img/icons/piedraspreciosas.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joyería Piedras Del Sur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/PiedrasPreciosas/css/estilos.css">
+    <link rel="shortcut icon" href="img/icons/piedraspreciosas.ico" type="image/x-icon">
 </head>
 <body>
-	<div class="contenido-header">
-		<div class="fondo" id="fondo">
-			<h1 class="texto">Piedras del Sur</h1>
-		</div>
-	</div>
+    <div class="contenido-header">
+        <div class="fondo" id="fondo">
+            <h1 class="texto">Piedras del Sur</h1>
+        </div>
+    </div>
 
-	<nav class="menu">
-		<a href="../index.html">¿Quienes Somos?</a>
-		<a href="catalogo.html">Catálogo de Productos</a>
-		<a href="promociones.html">Promociones</a>
-		<a href="#">Contacto</a>
-	</nav>
+    <nav class="menu">
+        <a href="../index.html">¿Quiénes Somos?</a>
+        <a href="catalogo.html">Catálogo de Productos</a>
+        <a href="promociones.html">Promociones</a>
+        <a href="#">Contacto</a>
+    </nav>
 
-	<main class="contenedor">
-		<div class="nosotros-container">
-			<div class="nosotros-row">
-				<div class="nosotros-col">
-					<h3 class="titulo">Contactanos</h3>
-					<h2 class="subtitulo"><span>Envianos tus consultas y sugerencias. Ponete en contacto con nuestra red de locales.</span></h2>
-					<p class="subtitulo">
-						Pensando siempre en brindarte los mejores productos.
-					</p>
-					<h4 class="contacto-datos">Rellena los campos con tus datos.</h4>
-					    <!-- Formulario de contacto  -->
-    				<form method="post" onsubmit="return validarFormulario();">
-        				<label for="nombre">Nombre:</label>
-        				<input type="text" id="nombre" name="nombre" required>
-        
-        				<label for="email">Email:</label>
-        				<input type="email" id="email" name="email" required>
-        
-        				<label for="mensaje">Mensaje:</label>
-        				<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        
-        				<button id="boton-contacto" type="submit">Enviar</button>
-						<br>
-						<br>
-    				</form>
-				</div>
-			</div>
-		</div>
-		
-		<div class="separador text-center text-white">
-			<p><q>Ofreciendote los productos de mas alta calidad. <q> JOLLERIA PIEDRAS DEL SUR</q> </q></p>
-		</div>
-		<footer class="redes-sociales">
-			<div class="custom-col-auto">
-				<a href="https://www.facebook.com/profile.php?id=61552017351933"><img src="img/icons/facebook.png" alt=""></a>
-				<a href="https://twitter.com/pre54750"><img src="img/icons/twitter.png" alt=""></a>
-				<a href="https://www.instagram.com/piedraspreciosasargentina/"><img src="img/icons/instagram-new.png" alt=""></a>
-			</div>
-		</footer>
-		
-	</div>	
-	<script src="js/main.js"></script>
+    <main class="contenedor">
+        <div class="nosotros-container">
+            <div class="nosotros-row">
+                <div class="nosotros-col">
+                    <h3 class="titulo">Contáctanos</h3>
+                    <h2 class="subtitulo"><span>Envíanos tus consultas y sugerencias. Ponte en contacto con nuestra red de locales.</span></h2>
+                    <p class="subtitulo">
+                        Pensando siempre en brindarte los mejores productos.
+                    </p>
+                    <h4 class="contacto-datos">Rellena los campos con tus datos.</h4>
+                    <!-- Formulario de contacto -->
+                    <form method="post" onsubmit="return validarFormulario(event);">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for "mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <button id="boton-contacto" type="submit">Enviar</button>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</main>
+        <div class="separador text-center text-white">
+            <p><q>Ofreciéndote los productos de más alta calidad. <q> JOLLERIA PIEDRAS DEL SUR</q> </q></p>
+        </div>
+        <footer class="redes-sociales">
+            <div class="custom-col-auto">
+                <a href="https://www.facebook.com/profile.php?id=61552017351933" target="_blank"><img src="img/icons/facebook.png" alt=""></a>
+                <a href="https://twitter.com/pre54750" target="_blank"><img src="img/icons/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/piedraspreciosasargentina" target="_blank"><img src="img/icons/instagram-new.png" alt=""></a>
+            </div>
+        </footer>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
