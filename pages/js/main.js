@@ -39,3 +39,23 @@ function validarFormulario() {
 	return true;
 }
 
+document.getElementById("cargarDatos").addEventListener("click", function () {
+    
+    fetch("https://jsonplaceholder.typicode.com/comments")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            let datosDiv = document.getElementById("datos");
+            datosDiv.innerHTML = ""; 
+
+            for (let i = 0; i < 10; i++) {
+                let p = document.createElement("p");
+                p.textContent = "Comentario: " + data[i].name;
+                datosDiv.appendChild(p);
+            }
+        })
+        .catch(function (error) {
+            console.log("Hubo un error: " + error);
+        });
+});
